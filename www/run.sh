@@ -30,7 +30,7 @@ if [[ $1 != "start" && $1 != "stop" && $1 != "reload" && $1 != "list" ]] ; then
 fi
 
 if [ $1 == "start" ] ; then
-    sudo $openresty $opts -g 'daemon off;'
+    sudo $openresty $opts -g "daemon off;"
     exit 0
 fi
 
