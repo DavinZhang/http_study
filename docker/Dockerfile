@@ -50,7 +50,8 @@
 # docker cp container_id:/tmp/a.pcap .
 
 #ARG RESTY_IMAGE="openresty/openresty:bionic"
-ARG RESTY_IMAGE="openresty/openresty:1.17.8.2-5-bionic"
+#ARG RESTY_IMAGE="openresty/openresty:1.17.8.2-5-bionic"
+ARG RESTY_IMAGE="openresty/openresty:1.19.9.1-4-bionic"
 
 FROM ${RESTY_IMAGE}
 
@@ -75,5 +76,9 @@ EXPOSE 80 8080
 # https/http2 service
 EXPOSE 440 441 442 443 8443
 
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
 #CMD ["/bin/bash", "-c", "cat /root/http_study/hosts >> /etc/hosts;cd /root/http_study/www;./run.sh start"]
+
+ENTRYPOINT ["/bin/bash", "-c", "cat /root/http_study/hosts >> /etc/hosts;cd /root/http_study/www;./run.sh"]
+CMD ["start"]
+
