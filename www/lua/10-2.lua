@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 
 local method = ngx.req.get_method()
 

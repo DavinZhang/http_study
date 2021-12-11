@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 
 -- range by ngx_http_range_filter_module
 

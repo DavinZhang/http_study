@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Copyright (C) 2021 by chrono
+# Copyright (C) 2021 by davin
 
 import asyncio
 import websockets

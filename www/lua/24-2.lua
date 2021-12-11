@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 -- rsa1024 encrypt and decrypt
 
 local resty_rsa = require "resty.rsa"

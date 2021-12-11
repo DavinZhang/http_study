@@ -1,21 +1,21 @@
 # Dockerfile
-# chrono@2020-08
+# Davin@2020-08
 
 # curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 # sudo service docker start
 # sudo usermod -aG docker ${USER}
 
-# docker image build -t chronolaw/http_study .
+# docker image build -t geniuscat/http_study .
 
-# docker run -it chronolaw/http_study bash
-# docker run -it --rm --net=host chronolaw/http_study bash
-# docker run -it --rm chronolaw/http_study bash
+# docker run -it geniuscat/http_study bash
+# docker run -it --rm --net=host geniuscat/http_study bash
+# docker run -it --rm geniuscat/http_study bash
 
 # you can use unix socket in docker, just with '-v'
-# docker run -it --rm  -v /tmp:/tmp chronolaw/http_study
+# docker run -it --rm  -v /tmp:/tmp geniuscat/http_study
 
-# docker run -it --add-host=www.chrono.com:127.0.0.1 chronolaw/http_study bash
-# docker run -it --add-host=www.chrono.com:127.0.0.1 --add-host=www.metroid.net:127.0.0.1 --rm chronolaw/http_study bash
+# docker run -it --add-host=www.davin.com:127.0.0.1 geniuscat/http_study bash
+# docker run -it --add-host=www.davin.com:127.0.0.1 --add-host=www.metroid.net:127.0.0.1 --rm geniuscat/http_study bash
 
 # docker exec -it container_id bash
 
@@ -25,24 +25,24 @@
 # ./run.sh start
 
 # telnet 127.0.0.1 80
-# telnet www.chrono.com 80
+# telnet www.davin.com 80
 
 # curl 127.0.0.1 -v
-# curl http://www.chrono.com/07-1 -v
+# curl http://www.davin.com/07-1 -v
 
 # https
-# curl https://www.chrono.com/23-1 -vk --tlsv1.2
-# curl https://www.chrono.com/23-1 -vk
+# curl https://www.davin.com/23-1 -vk --tlsv1.2
+# curl https://www.davin.com/23-1 -vk
 
 # http/2
-# curl https://www.chrono.com/30-1 -vk
+# curl https://www.davin.com/30-1 -vk
 # curl https://www.metroid.net:8443/11-1 -vk
 # curl https://www.metroid.net:8443/30-1 -vk
 
 # tcpdump tcp port 80 -i lo -w /tmp/a.pcap
-# curl http://www.chrono.com/07-1 -v
+# curl http://www.davin.com/07-1 -v
 # tcpdump tcp port 443 -i lo -w /tmp/a.pcap
-# SSLKEYLOGFILE=/tmp/a.log curl https://www.chrono.com/11-1 -vk
+# SSLKEYLOGFILE=/tmp/a.log curl https://www.davin.com/11-1 -vk
 # docker cp container_id:/tmp/a.pcap .
 
 #ARG RESTY_IMAGE="openresty/openresty:bionic"

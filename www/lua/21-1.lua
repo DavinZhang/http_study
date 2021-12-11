@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 
 local path = "/proxy/"
 --ngx.log(ngx.ERR, "exec " .. path)

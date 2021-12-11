@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 
 local cookie = ngx.var.http_cookie
 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Copyright (C) 2019 by chrono
+# Copyright (C) 2019 by davin
 
 import httplib
 

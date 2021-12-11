@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 -- aes encrypt and decrypt
 
 local resty_aes = require "resty.aes"

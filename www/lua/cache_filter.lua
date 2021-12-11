@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 
 if ngx.get_phase() ~= 'header_filter' then
     return

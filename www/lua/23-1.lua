@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 -- ssl/tls cipher suites
 
 --local ssl = require "ngx.ssl"

@@ -1,4 +1,4 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 -- test ssl handshake
 
 local scheme = ngx.var.scheme

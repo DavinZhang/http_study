@@ -1,10 +1,10 @@
--- Copyright (C) 2019 by chrono
+-- Copyright (C) 2019 by davin
 
 -- chunked range
 
 --[[
 GET /16-2 HTTP/1.1
-Host: www.chrono.com
+Host: www.davin.com
 Range: bytes=0-9, 20-29
 
 --xyz
