@@ -1,6 +1,7 @@
 # http_study
 
-[《透视HTTP协议》](https://time.geekbang.org/column/intro/189) Follow me to study HTTP.
+A lesson's code material which didn't work before modification 
+Follow me to study HTTP.
 
 Pull requests of Python/JavaScript example code are welcome!
 
