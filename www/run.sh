@@ -22,7 +22,7 @@ if [ $# -ne 1 ] ; then
     exit 0
 fi
 
-opts="-c conf/nginx.conf -p `pwd` -g daemon off"
+opts="-c conf/nginx.conf -p `pwd` -g daemon off;"
 
 if [[ $1 != "start" && $1 != "stop" && $1 != "reload" && $1 != "list" ]] ; then
     echo "format : $0 [start|stop|reload|list]"
