@@ -12,15 +12,9 @@
 
 version: "3"   # 1.13+
 #version: "2"    # 1.10+
-
 services:
-
   http_study:
-
-    #image: chronolaw/http_study
-    #image: chronolaw/http_study:alpine
-    #image: chronolaw/http_study:bionic
-    image: "chronolaw/http_study:${TAG:-latest}"
+    image: "geniuscat/http_study:${TAG:-latest}"
 
     container_name: http_study
 
@@ -29,11 +23,11 @@ services:
     #  - 8080:8080
 
     working_dir: /root/http_study/www
+    network_mode: "host"
 
     #command: /bin/bash
     #command : '/bin/bash -c "cd /root/http_study/www && ./run.sh start && /bin/bash"'
-    command : /bin/bash -c "./run.sh start && /bin/bash"
-
+    command : /bin/bash -c "./run.sh start"
     extra_hosts:
       - "www.chrono.com:127.0.0.1"
       - "www.metroid.net:127.0.0.1"
