@@ -20,10 +20,6 @@
 # docker exec -it container_id bash
 
 # docker login
-# docker image push chronolaw/http_study
-# docker image pull chronolaw/http_study
-
-
 # cat ~/http_study/hosts >> /etc/hosts
 # cd ~/http_study/www
 # ./run.sh start
@@ -65,7 +61,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         sudo vim git tcpdump telnet\
     && cd \
-    && git clone https://github.com/chronolaw/http_study --depth=1 \
+    && git clone https://github.com/DavinZhang/http_study --depth=1 \
     && sed -i 's/^#user root/user root/g' ${NGX_CONF} \
     && DEBIAN_FRONTEND=noninteractive apt-get autoremove -y
 
