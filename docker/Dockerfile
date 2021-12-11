@@ -73,7 +73,5 @@ EXPOSE 80 8080
 EXPOSE 440 441 442 443 8443
 
 #CMD ["/bin/bash"]
-#CMD ["/bin/bash", "-c", "cat /root/http_study/hosts >> /etc/hosts;cd /root/http_study/www;./run.sh start"]
-
 CMD ["/bin/bash", "-c", "cat /root/http_study/hosts >> /etc/hosts;cd /root/http_study/www;./run.sh start"]
 

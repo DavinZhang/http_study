@@ -27,7 +27,7 @@ services:
 
     #command: /bin/bash
     #command : '/bin/bash -c "cd /root/http_study/www && ./run.sh start && /bin/bash"'
-    command : /bin/bash -c "./run.sh start && /bin/bash"
+    command : /bin/bash -c "./run.sh start"
     extra_hosts:
       - "www.chrono.com:127.0.0.1"
       - "www.metroid.net:127.0.0.1"
